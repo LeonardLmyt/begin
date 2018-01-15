@@ -1,0 +1,281 @@
+@charset"UTF-8";
+/******* header  start *******/
+@media (max-width: 1200px) {
+	.homeapp-header.one-page-header .navbar-nav > li > a,
+	.homeapp-header.one-page-header .navbar-nav > li > a:focus {
+		padding: 7px 10px;
+	}
+}
+
+@media(min-width: 992px) {
+	.one-page-header.navbar {
+		padding: 12px 0;
+		-webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+		-moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+		transition: background .3s ease-in-out,padding .3s ease-in-out;
+	}
+
+	.homeapp-header.one-page-header .navbar-brand {
+		padding: 0;
+	}
+
+	.one-page-header.navbar .navbar-nav {
+		float: right;
+	}
+
+	.homeapp-header.one-page-header.navbar {
+		padding: 23px 0px;
+		transition: #000 0.3s ease-in-out 0s, padding 0.3s ease-in-out 0s;
+	}
+
+	.homeapp-header.one-page-header.top-nav-collapse {
+		padding: 11px 0px;
+	}
+
+	.one-page-header.navbar {
+		padding: 12px 0;
+		-webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+		-moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+		transition: background .3s ease-in-out,padding .3s ease-in-out;
+	}
+}
+
+@media (max-width: 991px) {
+	.one-page-header .navbar-header {
+		float: none;
+	}
+
+	.one-page-header .navbar-toggle {
+		display: block;
+	}
+
+	.one-page-header .navbar-collapse.collapse {
+		display: none !important;
+	}
+
+	.one-page-header .navbar-collapse.collapse.in {
+		display: block !important;
+	}
+
+	.one-page-header .navbar-nav {
+		margin: 0 0 5px;
+		float: none !important;
+	}
+
+	.one-page-header .navbar-nav > li {
+		float: none;
+	}
+
+	.navbar-default .navbar-nav > li > a {
+		padding: 10px 0;
+	}
+
+	.navbar-default .navbar-nav > li > a::before {
+		content: '';
+	}
+
+	.one-page-header .menu-container:before,
+  .one-page-header .menu-container:after {
+		content: " ";
+		display: table;
+	}
+
+	.one-page-header .menu-container:after {
+		clear: both;
+	}
+
+	.one-page-header > .navbar-default > .container {
+		width: inherit;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.one-page-header > .navbar-default > .container > .navbar-header,
+  .one-page-header > .navbar-default > .container > .navbar-collapse {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 990px) {
+	.homeapp-header.one-page-header .navbar-toggle {
+		margin: 15px 0 0;
+	}
+	.homeapp-header.one-page-header .navbar-toggle .icon-bar {
+		height: 1px;
+		background: #000;
+		margin-bottom: 7px;
+	}
+	.homeapp-header.one-page-header-style-2.navbar .navbar-nav {
+		margin: 0;
+	}
+	.homeapp-header.one-page-header .navbar-nav > li > a.btn-nav {
+		margin: 0 0 20px;
+		max-width: 138px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.one-page-header .menu-container {
+		width: 720px;
+	}
+}
+
+.homeapp-header.one-page-header {
+	box-shadow: 0 3px 1px #ebebeb;
+	background: #fff;
+}
+
+.one-page-header {
+	border-bottom: none;
+	background: rgba(0,0,0,0.4);
+}
+
+.one-page-header .container {
+	position: relative;
+}
+
+.one-page-header .navbar-toggle {
+	border: none;
+	margin-right: 3px;
+	padding-right: 0;
+}
+
+.homeapp-header.one-page-header .navbar-brand {
+	line-height: 1;
+	height: auto;
+}
+
+.navbar-brand > img {
+	width: 130px;
+	opacity: .8;
+}
+.navbar-fixed-top .navbar-collapse {
+	max-height: 100%;
+}
+.homeapp-header.one-page-header .navbar-nav > li > a,
+.homeapp-header.one-page-header .navbar-nav > li > a:focus {
+	color: #222;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 7px 13px;
+}
+
+.one-page-header .navbar-nav > li > a {
+	color: #eee;
+	font-size: 12.5px;
+	text-transform: uppercase;
+	padding: 17px 15px 13px;
+}
+
+.homeapp-header.one-page-header .navbar-nav > li > a.btn-u {
+	margin-left: 13px;
+	color: #fff;
+	background: #4fd2c2;
+}
+.rounded-2x {
+	border-radius: 10px !important;
+}
+.one-page-header .navbar-toggle:hover, .one-page-header .navbar-toggle:focus {
+	background: none;
+}
+/******* header  end *******/
+
+/******* login start *******/
+.wrap1{position:absolute; top:0; right:0; bottom:0; left:0; margin:auto }/*把整个屏幕真正撑开--而且能自己实现居中*/
+.main_content{background:url(../images/loginmainbg.png) repeat; margin-left:auto; margin-right:auto; text-align:left; float:none; border-radius:8px;}
+.form-group{position:relative;}
+.login_btn{display:block; background:#3872f6; color:#fff; font-size:15px; width:100%; line-height:50px; border-radius:3px; border:none; }
+.login_input{width:100%; border:1px solid #3872f6; border-radius:3px; line-height:40px; padding:2px 5px 2px 30px; background:none;}
+.icon_font{position:absolute; bottom:15px; left:10px; font-size:18px; color:#3872f6;}
+.font16{font-size:16px;}
+.mg-t20{margin-top:20px;}
+@media (min-width:200px){.pd-xs-20{padding:20px;}}
+@media (min-width:768px){.pd-sm-50{padding:50px;}}
+#grad {
+  background: -webkit-linear-gradient(#4990c1, #52a3d2, #6186a3); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#4990c1, #52a3d2, #6186a3); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#4990c1, #52a3d2, #6186a3); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#4990c1, #52a3d2, #6186a3); /* 标准的语法 */
+}
+
+.container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .container-fixed();
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+/******* login  end *******/

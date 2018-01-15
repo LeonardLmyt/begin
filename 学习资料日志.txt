@@ -1,0 +1,81 @@
+1.post 请求：
+
+    this.$http.post("http://cjhch.com/AjaxTest.ashx",{type:"getjson",'url':'https://apis.map.qq.com/ws/geocoder/v1/?address=广东省佛山市顺德区广东工业设计城&key=YSGBZ-3IT6U-5CDVT-2LDLF-GGHWK-GFB7L'},{emulateJSON:true}).then(
+		  function (res) {
+				  console.log(res))
+			  },function (res) {
+					console.log('链接失败')
+			  }
+		  );
+	  }
+
+2.get 请求：
+
+    this.$http.get('/api/test', {}).then((data) => {
+        console.log(data);
+    }, (response) => {
+
+	})
+
+3.webpack配置代理
+    index.js --
+    前端端分离需要独立安装mysql
+    proxyTable: {
+        '/api': {
+			target: 'http://127.0.0.1:9000',
+			changeOrigin:true,
+			pathRewrite: {
+			  '^/api': '/'
+		}
+    }
+	
+4.配置jquery
+    webpack.base.conf.js --
+	plugins: [
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery",
+			"windows.jQuery": "jquery"
+		})
+	],
+	
+	resolve: {
+		alias: {
+		  'jquery': path.resolve(__dirname, '../node_modules/jquery/src/jquery'),
+		}
+	},
+	
+5.配置bootstrap
+    webpack.base.conf.js--
+    resolve: {
+		alias: {
+		  'bootstrap': path.resolve(__dirname, '../node_modules//bootstrap'),
+		}
+	}
+	
+	main.js --
+	import 'bootstrap/dist/css/bootstrap.min.css'
+	import 'bootstrap/dist/js/bootstrap.min.js'
+	
+6.原生post请求
+    var x = new XMLHttpRequest();
+	x.onreadystatechange = function () {
+	if (x.readyState == 4) {
+		if (x.status == 200) {
+			console.log(x);
+		}
+	}
+	}
+	x.open("POST","/");
+	x.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); 
+	x.send("type=testpost&params=a");
+
+7.配置api代理后端
+    package.json--
+    关联安装concurrently插件
+    "scripts": {
+        "serve": "node api/entrance.js",
+        "dev": "node build/dev-server.js",
+        "start": "concurrently \"npm run serve\" \"npm run dev\""
+    }
+
